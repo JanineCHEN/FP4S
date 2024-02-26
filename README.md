@@ -10,6 +10,24 @@ The authors will make the annotated floor plan image datasets, the model code an
 ### Introduction
 This project introduces a scribble-based semi-weakly-supervised framework for floor plan image segmentation, merging weakly annotated and unlabeled images to boost model robustness and generalizability. This framework benefits from a simplified annotation process while retaining detailed information. Accordingly, we provide a new benchmark dataset for floor plan image parsing covering a wide range of architectural styles and categories.
 
+### Environment requirements
+Linux # the model has been test on Linux system
+Pytorch
+Other requirements please refer to `requirements.txt`
+
+### Setup virtual environment
+
+Using [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/index.html) as an example:
+```
+mkvirtualenv FP4S
+workon FP4S
+pip install torch torchvision
+
+```
+
+### Execution
+
+
 ### Dataset
 Coming soon...
 
