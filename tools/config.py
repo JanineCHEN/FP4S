@@ -33,16 +33,16 @@ def get_config():
     cfg = parser.parse_args()
 
     cfg._data = 'FP_train'
-    cfg.image_root = f'./data/{cfg._data}/img/'
-    cfg.gt_root = f'./data/{cfg._data}/gt/'
-    cfg.mask_root = f'./data/{cfg._data}/mask/'
-    cfg.gray_root = f'./data/{cfg._data}/gray/'
-    cfg.edge_root = f'./data/{cfg._data}/edge/'
+    cfg.image_root = f'./dataset/{cfg._data}/img/'
+    cfg.gt_root = f'./dataset/{cfg._data}/gt/'
+    cfg.mask_root = f'./dataset/{cfg._data}/mask/'
+    cfg.gray_root = f'./dataset/{cfg._data}/gray/'
+    cfg.edge_root = f'./dataset/{cfg._data}/edge/'
     cfg._data_val = 'FP_val'
-    cfg.image_val_root = f'./data/{cfg._data_val}/img/'
-    cfg.gt_val_root = f'./data/{cfg._data_val}/gt/'
-    cfg.image_unsupervised_root = f'./data/FP_unsupervised/'
-    cfg.image_unsupervised_list_path = f'./data/unAnnotated_FPs_{cfg.num_unsupervised_imgs}.txt'
+    cfg.image_val_root = f'./dataset/{cfg._data_val}/img/'
+    cfg.gt_val_root = f'./dataset/{cfg._data_val}/gt/'
+    cfg.image_unsupervised_root = f'./dataset/FP_unsupervised/'
+    cfg.image_unsupervised_list_path = f'./dataset/unAnnotated_FPs_{cfg.num_unsupervised_imgs}.txt'
     cfg.num_classes = 25
     cfg.channel = 8 * 4
     cfg.edge_loss_weight = cfg.w_edge
