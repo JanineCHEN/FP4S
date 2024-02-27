@@ -19,7 +19,7 @@ This project introduces a scribble-based semi-weakly-supervised framework for fl
 # Quick start
 ## Download the repository
 ```
-https://github.com/JanineCHEN/FP4S.git
+git clone https://github.com/JanineCHEN/FP4S.git
 cd FP4S
 ```
 ## Setup virtual environment
