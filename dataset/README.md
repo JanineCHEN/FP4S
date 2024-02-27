@@ -2,7 +2,7 @@ For downloading the dataset, please refer to [THIS LINK](https://dataverse.harva
 You should have a dataset directory tree like this:
 
 ```
-└── data
+└── dataset
     ├── FP_train
     │   ├── edge
     │   │   └── ...png files
