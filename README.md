@@ -12,9 +12,9 @@ This project introduces a scribble-based semi-weakly-supervised framework for fl
 
 # Dependencies
 - Linux
-- Pytorch
+- Pytorch 1.13.1+cu117
 - Other required packages are summerized in `requirements.txt`
-- CUDA-supported GPU with at least GB memory size is required for training
+- CUDA-supported GPU with at least 24 GB memory size is required for training
 
 # Quick start
 ## Download the repository
@@ -27,7 +27,7 @@ Using [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/ind
 ```
 mkvirtualenv FP4S
 workon FP4S
-pip install torch torchvision
+pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
 pip install -r requirements.txt
 ```
 ## Dataset
@@ -38,6 +38,40 @@ For downloading the dataset, please refer to <a href="https://github.com/JanineC
 For training the FP4S model, please run:
 ```
 python main.py
+```
+For customized configuration, please refer to `tools/config.py`:
+If you want to use cyclic learning rate schedular for training, please run:
+```
+python main.py --lr_schedule True
+```
+If you want to normalize the floor plan images for training, please run:
+```
+python main.py --ifNorm True
+```
+If you want to leverage pre-trained model weights of the chosen backbone for training, please run:
+```
+python main.py --ifpretrain True
+```
+For using either Focal loss or abCE loss for training, please run:
+```
+python main.py --useFocalLoss True
+```
+or
+```
+python main.py--useabCELoss True
+```
+
+If you want to use cutmix augmentation, please run:
+```
+python main.py --cutmix True
+```
+If you want to change the backbone, please run:
+```
+python main.py --backbone <the chosen backbone name>
+```
+If you want to change the batchsize, please run (notice that if cutmix is set to `True`, batchsize will be set to 2 as default):
+```
+python main.py --batchsize <your preferred batchsize>
 ```
 
 ## Download the checkpoint
