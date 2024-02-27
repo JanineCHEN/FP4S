@@ -1,0 +1,5 @@
+pandas
+requests
+tqdm
+opencv-python
+kornia
