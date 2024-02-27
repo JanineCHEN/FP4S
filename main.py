@@ -50,7 +50,7 @@ if not os.path.isfile(cfg.image_unsupervised_list_path):
     print(f"{cfg.image_unsupervised_list_path} does not exist! Start downloading {str(cfg.num_unsupervised_imgs)} unannotated floor plan images: ")
     if not os.path.exists(cfg.image_unsupervised_root):
         os.makedirs(cfg.image_unsupervised_root)
-    ulist = pd.read_csv('./data/unsupervised_list.csv')
+    ulist = pd.read_csv('./dataset/unsupervised_list.csv')
     ulist = list(ulist['img_url'])
     random.shuffle(ulist)
     ulist_txt = []
