@@ -12,7 +12,7 @@ This project introduces a scribble-based semi-weakly-supervised framework for fl
 
 # Dependencies
 - Linux
-- Pytorch 1.13.1+cu117
+- [Pytorch 1.13.1+cu117](https://pytorch.org/get-started/previous-versions/#v1131)
 - Other required packages are summerized in `requirements.txt`
 - CUDA-supported GPU with at least 24 GB memory size is required for training
 
