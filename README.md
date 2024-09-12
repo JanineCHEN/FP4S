@@ -3,8 +3,6 @@ FP4S: Floor plan image segmentation via scribble-based semi-weakly-supervised le
 
 Official code and instructions for [**"Floor Plan Image Segmentation Via Scribble-Based Semi-Weakly Supervised Learning: A Style and Category-Agnostic Approach"**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4727643)
 
-The paper has been submitted to **Automation in Construction** and is currently under peer review.
-
 The authors will make the annotated floor plan image datasets, the model code and the model weights of the best performance available for future research soon.
 
 # Introduction
